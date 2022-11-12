@@ -1,0 +1,72 @@
+#topdiv
+{
+	height:50px;width:100%;border-bottom:solid 1px #cccccc;
+}
+#menudiv
+{
+	height:35px;width:100%;border-top:solid 1px #cccccc;	
+}
+#m1,#m2,#m3,#m4,#m5,#m6
+{
+	height:85%;width:150px;background-color:#333333;color:#ffffff;margin-top:3px;
+	float:left;text-align:center;padding-top:5px;padding-bottom:2px;font-size:18px;
+	margin:2px;
+}
+#headerdiv
+{
+	height:320px;width:100%;border-bottom:solid 1px #cccccc;
+}
+#clsimg
+{
+	height:100%;width:100%;
+}
+#marqueediv
+{
+	height:40px;width:100%;border:solid 1px #333333;background-color:#333333;
+	color:#cccccc;font-size:22px;padding-top:5px;
+}
+
+#bodydiv
+{
+	height:699px;width:100%;border-bottom:solid 1px #cccccc;
+}
+
+#leftdiv,#rightdiv
+{
+	height:99.9%;width:22%;float:left;background-color:#ffffff;
+}
+
+#centerdiv
+{
+	height:99.9%;width:55.8%;float:left;
+}
+
+#centerdiv h2
+{
+	font-size:30px;color:#101010;margin-left:20px;
+}
+#centerdiv p
+{
+	font-size:18px;color:#666666;margin-left:20px;margin-right:20px;
+	text-align:justify;
+}
+
+
+#footerdiv
+{
+	height:200px;width:100%;background-color:#333333;border:solid 1px #333333;
+}
+#f1,#f2,#f4,#f3
+{
+	height:99.9%;width:24.9%;float:left;color:#cccccc;
+	text-align:center;
+}
+#developerdiv
+{
+	height:40px;width:100%;border:solid 1px #333333;color:#ffffff;
+	background-color:#666666;
+}
+#sidebarimg
+{
+	height:120px;width:80%;border:solid 2px #333333;border-radius:10px 10px;
+}

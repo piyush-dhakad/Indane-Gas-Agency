@@ -1,0 +1,72 @@
+.topbardiv
+		{
+			height:60px;width:100%;	clear:both;		
+			border-bottom:solid 1px #000000;
+		}
+		
+		.topbardiv #td1
+		{
+			height:99%;width:10%;float:left;
+			
+		}			
+		
+		.topbardiv #td1 .clslogo
+		{
+			height:99%;width:100%;			
+		}
+		.topbardiv #td2
+		{
+			height:99%;width:60%;float:left;
+			font-size:29px;
+		}
+		.topbardiv #td2 h3
+		{
+			margin:2px;padding:3px;
+			margin-top:15px;
+		}
+		
+		.topbardiv #td3
+		{
+			height:99%;width:29.8%;float:left;
+		}
+		.topbardiv #td3 a
+		{	text-decoration:none;font-size:20px;margin-left:30px;color:#ff0000;padding:10px 15px;background-color:#000000;
+		}
+		
+		.menudiv
+		{
+		height:45px;width:100%;background-color:#333333;clear:both;			
+		}
+		
+		.menudiv ul
+		{
+			list-style:none;margin:0px;padding:0px;
+		}
+		
+		.menudiv ul li
+		{
+			width:130px;float:left;text-align:center;padding:10px 15px 10px 15px;
+		}
+		.menudiv ul li:hover
+		{
+			background-color:#999999;
+		}
+		.menudiv ul li a
+		{
+			text-decoration:none;font-size:20px;color:#fffccc;
+		}
+		
+		.bodydiv
+		{
+			height:500px;width:100%;clear:both;			
+		}
+		
+		.bodydiv .b1
+		{
+			height:99.8%;width:40%;float:left;
+		}
+		.bodydiv .b2
+		{
+			height:99.8%;width:59.8%;float:left;
+		}
+		

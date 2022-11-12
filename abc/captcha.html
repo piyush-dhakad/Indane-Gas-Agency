@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sample CAPTCHA HTML</title>
+  <link rel="stylesheet" href="securimage.css" media="screen">
+</head>
+<body>
+<form method="post" action="#">
+<div>
+//yha captcha ki image he
+    <img style="float: left; padding-right: 5px" id="captcha_image" src="securimage_show.php?<?php echo md5(uniqid(time)) ?>" alt="CAPTCHA Image">
+ //yha pr audio sound he
+    <div id="captcha_image_audio_div">
+    <audio id="captcha_image_audio" preload="none" style="display: none">
+      <!-- <source id="captcha_image_source_mp3" src="securimage_play.php?id=1234&amp;format=mp3" type="audio/mpeg"> -->
+      <source id="captcha_image_source_wav" src="securimage_play.php?id=1234" type="audio/wav">
+      <object type="application/x-shockwave-flash" data="securimage_play.swf?bgcol=%23ffffff&amp;icon_file=images%2Faudio_icon.png&amp;audio_file=securimage_play.php" height="32" width="32">
+        <param name="movie" value="securimage_play.swf?bgcol=%23ffffff&amp;icon_file=images%2Faudio_icon.png&amp;audio_file=securimage_play.php" />
+      </object>
+    </audio>
+  </div>
+//yha pr audio button he
+    <div id="captcha_image_audio_controls">
+    <a tabindex="-1" class="captcha_play_button" href="securimage_play.php?id=1234 ?>" onclick="return false">
+      <img class="captcha_play_image" height="32" width="32" src="images/audio_icon.png" alt="Play CAPTCHA Audio" style="border: 0px">
+      <img class="captcha_loading_image rotating" height="32" width="32" src="images/loading.png" alt="Loading audio" style="display: none">
+    </a>
+    <noscript>Enable Javascript for audio controls</noscript>
+  </div>
+//yha pr refresh button he
+  <a tabindex="-1" style="border: 0" href="#" title="Refresh Image" onclick="document.getElementById('captcha_image').src = 'securimage_show.php?' + Math.random(); captcha_image_audioObj.refresh(); this.blur(); return false">
+    <img height="32" width="32" src="images/refresh.png" alt="Refresh Image" onclick="this.blur()" style="border: 0px; vertical-align: bottom" />
+  </a>
+  <br>
+
+  <script type="text/javascript" src="securimage.js"></script>
+  <script type="text/javascript">
+    captcha_image_audioObj = new SecurimageAudio({ audioElement: 'captcha_image_audio', controlsElement: 'captcha_image_audio_controls' });
+  </script>
+  <div style="clear: both"></div>
+
+  <label for="captcha_code">Type the text:</label>
+  <input type="text" name="captcha_code" id="captcha_code">
+</div>
+
+
+<!-- and once again with comments for clarity -->
+<!-- all IDs have been changed so this *should* work on a PHP enabled server -->
+<!-- example_form.php should really be used for testing though -->
+<br><br>
+<input type="submit" name="submit" value="submit" />
+</form>
+</body>
+</html>
